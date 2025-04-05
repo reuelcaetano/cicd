@@ -53,6 +53,6 @@ body:
     attributes:
       label: 💬 Observações (opcional)
       description: Alguma nota extra? Referências, links ou dependências?
-      placeholder: Ex: Relacionado à issue #15 (User Story)
+      placeholder: Ex Relacionado à issue #15 (User Story)
     validations:
       required: false
