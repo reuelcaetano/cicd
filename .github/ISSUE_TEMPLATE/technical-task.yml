@@ -1,0 +1,58 @@
+name: 🛠️ Task Técnica
+description: Use este template para criar uma tarefa técnica com informações detalhadas.
+title: "[Task] "
+labels: ["task", "tecnica"]
+body:
+  - type: input
+    id: objetivo
+    attributes:
+      label: 🎯 Objetivo
+      description: Descreva resumidamente o que essa tarefa deve entregar.
+      placeholder: Ex: Criar endpoint POST /clientes
+    validations:
+      required: true
+
+  - type: textarea
+    id: requisitos
+    attributes:
+      label: 🧩 Requisitos Técnicos
+      description: Liste os requisitos técnicos ou regras que devem ser seguidas.
+      placeholder: |
+        - Criar rota POST /clientes
+        - Validar CPF/CNPJ
+        - Utilizar Prisma para persistência
+    validations:
+      required: true
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: ✅ Checklist (opcional)
+      description: Se houver subtarefas internas, liste aqui como um checklist.
+      placeholder: |
+        - [ ] Criar DTO
+        - [ ] Criar controller
+        - [ ] Criar testes
+    validations:
+      required: false
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: ✔️ Critérios de Aceitação
+      description: O que precisa estar funcionando para que a tarefa seja considerada pronta?
+      placeholder: |
+        - Retorna 201 com dados válidos
+        - Validações impedem dados incorretos
+        - Testes cobrindo cenários de sucesso e erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: 💬 Observações (opcional)
+      description: Alguma nota extra? Referências, links ou dependências?
+      placeholder: Ex: Relacionado à issue #15 (User Story)
+    validations:
+      required: false
